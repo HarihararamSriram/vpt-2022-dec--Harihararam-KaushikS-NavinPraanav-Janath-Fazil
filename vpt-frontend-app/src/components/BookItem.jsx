@@ -3,7 +3,7 @@ import "./styles/Book.css";
 import ReactLogo from "../assets/bookmark.svg";
 import ReactLogo2 from "../assets/bookmarkfill.svg";
 import { functions } from "../../backend";
-import defaultBook from "../assets/defaultBook.png";
+import defaultBook from "../assets/defaultbook.png";
 import { useNavigate } from "react-router-dom";
 const LARGE = 1;
 const SMALL = 0;
