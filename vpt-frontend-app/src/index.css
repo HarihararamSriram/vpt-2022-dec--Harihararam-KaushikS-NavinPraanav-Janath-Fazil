@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
-
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +8,16 @@
 :root {
   font-family: 'Poppins', sans-serif;
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
 }
 
+html{
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
 
 body {
   margin: 0;
