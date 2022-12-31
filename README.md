@@ -175,4 +175,4 @@ Problem statement: [https://github.com/venmurasu-programming-team/2022-Dec-Conte
 [LinkedIn]:https://img.icons8.com/fluency/512/linkedin.png 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[product-screenshot]: /images/home.png
+[product-screenshot]: /vpt-frontend-app/images/home.png
