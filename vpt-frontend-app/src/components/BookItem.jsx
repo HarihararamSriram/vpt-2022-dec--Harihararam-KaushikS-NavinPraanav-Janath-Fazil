@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/book.css";
+import "./styles/Book.css";
 import ReactLogo from "../assets/bookmark.svg";
 const LARGE = 1;
 const SMALL = 0;

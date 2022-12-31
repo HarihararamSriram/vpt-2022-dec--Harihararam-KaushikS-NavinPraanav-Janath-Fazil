@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BookItem from "./BookItem";
-import "./styles/book.css";
+import "./styles/Book.css";
 const LARGE = 1;
 const SMALL = 0;
 export default function Book() {

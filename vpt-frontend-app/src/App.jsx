@@ -2,6 +2,8 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
 import Book from "./components/Book";
+import Description from "./pages/Description";
+
 function App() {
   return (
     <Routes>
@@ -14,7 +16,7 @@ function App() {
           </>
         }
       ></Route>
-      {/* <Route path="/books" element={}></Route> */}
+      <Route path="/books/:bookId" element={<Description />}></Route>
     </Routes>
   );
 }
