@@ -53,6 +53,8 @@
 ## About The Project
 <img src="vpt-frontend-app/images/home.png">
 <br>
+<img src="vpt-frontend-app/images/description.png">
+<br>
 <!-- [![OpenLibrary API based dashboard]][product-screenshot]](<!-- the link of the project-->) -->
 
 ## Implementation details
