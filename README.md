@@ -51,8 +51,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![OpenLibrary API based dashboard]][product-screenshot]](<!-- the link of the project-->)
+<img src="/vpt-frontend-app/images/home.png">
+<br>
+<!-- [![OpenLibrary API based dashboard]][product-screenshot]](<!-- the link of the project-->) -->
 
 ## Implementation details
 
@@ -162,8 +163,6 @@ Problem statement: [https://github.com/venmurasu-programming-team/2022-Dec-Conte
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Deployed at : (https://gleaming-llama-16e394.netlify.app)
 
 
 
