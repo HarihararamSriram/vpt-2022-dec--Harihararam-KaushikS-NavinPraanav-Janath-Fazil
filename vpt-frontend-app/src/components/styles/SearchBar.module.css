@@ -1,8 +1,15 @@
+/* Search Div */
+.search-div{
+    text-align: center;
+}
+
 /* Search Title */
 .search-title{
-    font-size: 50px;
+    font-size: 125px;
+    font-weight: bold;
+
     background: -webkit-linear-gradient(dodgerblue, deepskyblue);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

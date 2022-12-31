@@ -5,8 +5,16 @@ import Book from "./components/Book";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<SearchBar />}></Route>
-      <Route path="/books" element={<Book />}></Route>
+      <Route
+        path="/"
+        element={
+          <>
+            <SearchBar />
+            <Book />
+          </>
+        }
+      ></Route>
+      {/* <Route path="/books" element={}></Route> */}
     </Routes>
   );
 }

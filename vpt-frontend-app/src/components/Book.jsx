@@ -16,6 +16,9 @@ export default function Book() {
           </div>
           <div id="list-th">
             <BookItem />
+            <BookItem />
+            <BookItem />
+            <BookItem />
           </div>
         </div>
       </div>

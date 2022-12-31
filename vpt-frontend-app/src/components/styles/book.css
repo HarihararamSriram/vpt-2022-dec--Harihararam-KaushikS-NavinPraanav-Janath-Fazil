@@ -26,19 +26,23 @@
   
   .book {
     display: inline-block;
-    width: 230px;
-    height: 390px;
+    width: 280px;
+    height: 480px;
     box-shadow: 0 0 20px #aaa;
-    margin: 25px;
+    border-radius: 10px;
+    margin: 10px;
     padding: 10px 10px 0 10px;
     vertical-align: top;
     transition: height 1s;
   }
+
+  .book .desc
+  {
+    font-size: 15px;
+    font-style: italic;
+  }
   /* star button */
-  .book:after {
-    font-family: FontAwesome;
-    content: "\f006";
-    font-size: 35px;
+  .bookmark {
     position: relative;
     left: -.1cm;
     top: -1.6cm;
@@ -46,8 +50,9 @@
   }
   
   .cover {
+    border-radius:10px;
     border: 2px solid gray;
-    height: 80%;
+    height: 70%;
     overflow: hidden;
   }
   
