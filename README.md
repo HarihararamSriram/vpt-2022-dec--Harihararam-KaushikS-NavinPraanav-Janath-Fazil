@@ -55,7 +55,7 @@
 <br>
 <img src="vpt-frontend-app/images/description.png">
 <br>
-<!-- [![OpenLibrary API based dashboard]][product-screenshot]](<!-- the link of the project-->) -->
+<!-- [![OpenLibrary API based dashboard]][product-screenshot]](<!-- the link of the project-->
 
 ## Implementation details
 
@@ -114,6 +114,10 @@ To get a local copy up and running follow these simple example steps or rev up t
 2. Install NPM packages
    ```sh
    npm install
+   ```
+3. Run the local server
+   ```sh
+   npm start
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
