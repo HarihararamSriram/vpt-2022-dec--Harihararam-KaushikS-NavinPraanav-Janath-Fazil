@@ -51,7 +51,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img src="/vpt-frontend-app/images/home.png">
+<img src="vpt-frontend-app/images/home.png">
 <br>
 <!-- [![OpenLibrary API based dashboard]][product-screenshot]](<!-- the link of the project-->) -->
 
