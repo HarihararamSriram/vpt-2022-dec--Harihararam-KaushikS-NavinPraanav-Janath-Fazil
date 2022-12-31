@@ -3,6 +3,7 @@ import styles from "./Description.module.css";
 import "./BookDesign.css";
 import { useParams } from "react-router-dom";
 import { functions } from "../../backend";
+import defaultBook from "../assets/defaultbook.png";
 
 function Description() {
   const [apiData, setApiData] = useState(null);
@@ -27,7 +28,7 @@ function Description() {
           <ul className="hardcover_front" style={{ listStyleType: "none" }}>
             <li>
               <img
-                src={apiData && apiData.url}
+                src={apiData && (apiData.url === undefined ? defaultBook : apiData.url)}
                 alt=""
                 width="100%"
                 height="100%"
