@@ -24,17 +24,17 @@ const parseCoverImageUrl = function (res) {
 
 //creating axios base url
 const api = axios.create({
-  baseURL: "http://openlibrary.org/search.json?q=",
+  baseURL: "https://openlibrary.org/search.json?q=",
   withCredentials: false,
 });
 
 const apiAuthors = axios.create({
-  baseURL: "http://openlibrary.org/search/authors.json?q=",
+  baseURL: "https://openlibrary.org/search/authors.json?q=",
   withCredentials: false,
 });
 
 const book = axios.create({
-  baseURL: "http://openlibrary.org/",
+  baseURL: "https://openlibrary.org/",
 });
 
 // searching by query
@@ -108,7 +108,7 @@ const dataBook = async (str) => {
     return { ...data, url, desc: response.data.description };
   });
   let author = await axios.get(
-    "http://openlibrary.org".concat(data.authors[0].author.key).concat(".json")
+    "https://openlibrary.org".concat(data.authors[0].author.key).concat(".json")
   );
   return { ...data, authName: author.data.name };
 };
