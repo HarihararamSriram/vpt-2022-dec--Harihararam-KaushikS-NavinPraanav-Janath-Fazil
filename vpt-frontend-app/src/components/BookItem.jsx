@@ -1,33 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles/Book.css";
 import ReactLogo from "../assets/bookmark.svg";
+import ReactLogo2 from "../assets/bookmarkfill.svg";
+import { functions } from "../../backend";
+import defaultBook from "../assets/defaultBook.png";
+import { useNavigate } from "react-router-dom";
 const LARGE = 1;
 const SMALL = 0;
 export default function BookItem(props) {
-  console.log(props);
+  const navigate = useNavigate();
+  const [apiData, setApiData] = useState(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await functions.dataBook(props.id);
+      setApiData(data);
+    };
+    fetchData();
+  }, []);
+
+  const navigateHandler = () => {
+    navigate(`/books/${props.id.split("/")[2]}`);
+  };
   return (
     <>
       <div
+        onClick={navigateHandler}
         className={"book read ".concat(
           props.viewMode === SMALL ? "smallTiles" : "largeTiles"
         )}
       >
         <div className="cover">
-          <img src="https://s-media-cache-ak0.pinimg.com/564x/f9/8e/2d/f98e2d661445620266c0855d418aab71.jpg" />
+          <img src={apiData ? apiData.url : defaultBook} />
         </div>
         <div>
-          <p className="title">Frankenstein</p>
+          <p className="title">{props.title} </p>
           {props.viewMode === LARGE && (
             <p className="author">
-              <i className="fa fa-user"> </i> Mary Shelley
+              <i className="fa fa-user"> </i> {props.author_name}
             </p>
-          )}
-          {props.viewMode === SMALL && (
-            <p className="description>"> description </p>
           )}
         </div>
         <div className="bookmark">
-          {props.viewMode === LARGE && <img src={ReactLogo} height={40} />}
+          {props.viewMode === LARGE && <img src={ReactLogo2} height={40} />}
         </div>
       </div>
     </>
